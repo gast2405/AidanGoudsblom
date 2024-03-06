@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+body {
+    background-image: url("Images/Misc/flame.gif"), url("Images/Background/232.png");
+    background-repeat: repeat-x, repeat;
+    background-color: black;
+	background-position: bottom, center;
+	
+	width: 100%;
+	height: 101vh;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	overflow: hidden;
+}
+
+.Title-name {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 85.99%;
+	min-width: 1000px;
+	text-align: center;
+	background-color: black;
+	float: left;
+}
+
+#goudsblom {
+	
+}
+
+/*#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+}*/
+
+#videoElement {
+	display: inline;
+	width: 269px;
+	height: 211px;
+	background-color: rgba(255,0,4,0.00);
+	
+}
+
+#reaction-cam {
+	display: inline;
+	margin-left: -273px;
+	width: 269px;
+	height: 211px;
+	
+	
+}
+
+#backup-reaction-cam {
+	display: inline;
+	margin-right: -273px;
+	margin-left: auto;
+	width: 269px;
+	height: 211px;
+	
+}
+
+#reaction-cam-div {
+	display: inline;
+	margin-left: 0%;
+	align-content: flex-end; 
+	width: 269px;
+	height: 211px;
+	white-space: nowrap;
+	
+}
+
+
+
+
+
+
+.doors {
+	text-align: center;
+	margin: auto 0;
+}
+
+.door {
+	content: url("Images/Misc/doors closed.png");
+	width: 300px;
+	height: 243px;
+}
+
+.door:hover {
+	content: url("Images/Misc/Doors open.png");
+}
+
+.door-div {
+	display: inline-block;
+	width: 300px;
+	height: 243px;
+}
+
+#door1 {
+	background-image: url("Images/Background/429.png");
+}
+
