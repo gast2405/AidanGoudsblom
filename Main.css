@@ -109,3 +109,32 @@ body {
 	}
 }
 
+@media only screen and (max-width: 1535px) {
+	.Title-name {
+		width: 70.00%;
+	}
+	
+	.door {
+		width: 185px;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#videoElement {
+		display: none;
+	}
+	
+	#reaction-cam {
+		display: none;
+	}
+	
+	#reaction-cam-div {
+		display: none;
+	}
+	
+	#backup-reaction-cam {
+		display: none;
+	}
+}
+
