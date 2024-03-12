@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
-h1 {
+.cooltext {
 	color: rgba;
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	text-shadow: -1px 0 red, 0 1px white, 1px 0 white, 0 -1px red;
@@ -32,16 +32,17 @@ p {
 
 
 .redborder {
+	position: relative;
 	background-color: rgba(0,0,0,0.8);
 	width: 350px;
 	height: 325px;
 	text-align: center;
 	border: medium double red;
 
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	
 	margin-top: 1%;
+	align-self: center;
 
 }
 
@@ -123,4 +124,18 @@ h3 {
 	.smallborder {
 		display: block;
 	}
+}
+
+.backbutton {
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	border: thin solid blue;
+	width: 15%;
+	min-width: 150px;
+	height: 50px;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-right: 1px;
+	margin-left: 10px;
+	line-height: 50px;
 }
