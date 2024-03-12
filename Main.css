@@ -96,7 +96,7 @@ body {
 	content: url("Images/Misc/Doors open.png");
 }
 
-.door9:hover {
+#door9:hover {
 	content: url("Images/Misc/Doors_Special_1.png");
 }
 
