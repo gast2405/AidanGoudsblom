@@ -6,9 +6,9 @@ body {
     background-color: black;
 	background-position: center;
 	width: 100%;
-	height: 101vh;
+	height: 99vh;
 	margin: 0;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 
@@ -73,7 +73,7 @@ p {
 
 .expend:checked + .smalldesc {
   max-height:350px;
-  
+  min-width: 250px;
 }
 
 label {
@@ -117,4 +117,10 @@ h3 {
 	
 	align-self: center;
 	user-select: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.smallborder {
+		display: block;
+	}
 }
