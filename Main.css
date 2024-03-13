@@ -100,6 +100,10 @@ body {
 	content: url("Images/Misc/Doors_Special_1.png");
 }
 
+#door12:hover {
+	content: url("Images/Misc/Doors_Special_2.png");
+}
+
 
 @media only screen and (max-width: 1550px) {
 	.Title-name {
