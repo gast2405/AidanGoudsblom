@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page 4</title>
+<link href="Page-4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<a href="index.html"><div class="backbutton">
+	  <h3 class="cooltext">Return to homepage</h3>
+	</div></a>
+	
+	<div class="border">
+	<a href="https://gast2405.itch.io/chess-fight" target="_blank"><img src="Images/ChessFight/Crop_Logo.png" width="843" height="177" alt=""/></a>
+	</div>
+	
+	<div class="smallborder">
+	<h3 class="cooltext" href="https://gast2405.itch.io/chess-fight" target="_blank">UNDER DEVELOPMENT</h3>
+	</div>
+	<div class="smallborder">
+	<h3 class="cooltext" href="https://gast2405.itch.io/chess-fight" target="_blank">ChessFight</h3>
+	<h3>ChessFight is a chessgame with cards, spend control points to play cards to get advantage in the battlefield.</h3>
+	</div>
+	
+	<div class="subtext">
+    		<img src="Images/ChessFight/gif5.gif" width="740" height="412" alt="">
+    		<h4>A basic online match. (text is difficult to read on this low resolution gif)</h4>
+  	</div>
+	
+	<div class="smallborder">
+	<h3>The games central focus is on maintaining control over the board. The more Control Points you have the more cards you can play, the cost of a card depends on its rarity and if you have already played a card this turn (+2cp cost per previously played card). </h3>
+	<h3>Every chesspiece has a certain value, if you take a piece you gain cp equal to that value. You can also gain cp by discarding a card in your hand for its base value cost. If the control point indicator reaches all the way to your side of the table, you have lost the game. If its all the way on the other side of the table you have won the game.</h3>
+	</div>
+	
+	<div class="design-cast">
+		<div class="member">
+			<img src="Images/ChessFight/slider.gif" width="240" height="512" alt="">
+    		<h4>The control point slider.</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/winning.gif" width="740" height="412" alt="">
+    		<h4>Winning the game by defeating the king which holds the highest value of the board.</h4>
+		</div>
+  	</div>
+	
+	<div class="smallborder">
+	<h3>By opening the rulebook players can adjust their color palette, using the colors of their currently played camp combined with the other players color palette from their camp.</h3> <h3>These color palette don't just adjust the colors of the chesspieces but also of the board's turn refference, the text on the cards and the colors shown on the control point slider.</h3>
+	</div>
+	
+	<div class="subtext">
+    		<img src="Images/ChessFight/color.gif" width="740" height="412" alt="">
+    		<h4>Showcase of synced colors between clients.</h4>
+  	</div>
+	
+	<div class="smallborder">
+	<h3>The game is currently supported by Steam Networking Sockets for the peer to peer networking. A heavy focus of the game is user generated content, so it is also compatible with steam's workshop API.</h3>
+	<h3>The game is very heavily data-driven, allowing for a lot of flexibility for users creating content. In the game workshop mods are refferenced to with the name <em>cardpacks.</em> Before a match starts you can choose as many cardpacks as you'd like, this can influence the following:</h3>
+	</div>
+	
+	<div class="design-cast">
+		<div class="member">
+			<img src="Images/ChessFight/board.gif" width="740" height="412" alt="">
+    		<h4>Custom board setups. (this can also include square modifiers on setup but isn't shown here)</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/wierd_board.gif" width="740" height="412" alt="">
+    		<h4>Custom board setups with an asymmetrical grid are centered by using padding.</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/custom_cards.gif" width="740" height="412" alt="">
+    		<h4>Custom cards with custom effects. (this includes stuff like custom rarities and custom card variations and custom shaders)</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/JSON.gif" width="740" height="412" alt="">
+    		<h4>A simple JSON file currently allows you to make custom card, variations, rarities, shaders etc.</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/custom_chesspieces.gif" width="740" height="412" alt="">
+    		<h4>Custom chesspieces can be made with custom movement aswell. (the custom movement is a bit difficult to see here on a [1,2] board haha)</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/image2.png" width="740" height="412" alt="">
+    		<h4>Custom chesspieces can have own custom sprites. (custom sprites can be transparent this one just isn't)</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/stoned.gif" width="740" height="412" alt="">
+    		<h4>Custom effects can be made using only JSON file's aswell. This one locks a chesspiece in place for three turns.</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/smile.png" width="740" height="412" alt="">
+    		<h4>Custom square modifiers in the shape of a smiley. (these can not only have effects when stepped on but can also affect the movement of chesspieces AKA their legal moves)</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/smile2.gif" width="740" height="412" alt="">
+    		<h4>The same board setup but then making a smiley using smileys.</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/image3.png" width="740" height="412" alt="">
+    		<h4>Custom scripts allow lots of control over the board, this one making the background transparent allowing to play on your desktop.</h4>
+		</div>
+  	</div>
+	
+	<div class="smallborder">
+	<h3>Cardpacks have additional control like dependencies, allowing mods to add upon other mods or allowing mods to set a base for others to expand upon.</h3>
+		<h3>The game originally was build in <em>Unity</em> before switching to <em>Godot</em> because of the Unity runtime fee controversy. I have put a demo using the <em>Unity</em> version online, if you want to try it out you can click here --> <a href="https://gast2405.itch.io/chess-fight" target="_blank">ChessFight</a></h3>
+		<h3>Here are some more clips troughout the development.</h3>
+	</div>
+	<div class="design-cast">
+		<div class="member">
+			<img src="Images/ChessFight/gif1.gif" width="740" height="412" alt="">
+    		<h4>The chesspieces rotating way too much when holding them.</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/gif2.gif" width="740" height="412" alt="">
+    		<h4>First implementation of the rulebook falling from the sky.</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/gif3.gif" width="740" height="412" alt="">
+    		<h4>I don't even know what's happening here haha.</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/gif4.gif" width="740" height="412" alt="">
+    		<h4>The addition of chesspieces wiggling and sweating if they are about to be attacked, also making them fall when taken.</h4>
+		</div>
+		<div class="member">
+			<img src="Images/ChessFight/gif6.gif" width="740" height="412" alt="">
+    		<h4>On first launch of the game, the game creates a template mod that users can adjust.</h4>
+		</div>
+    	<div class="member">
+			<img src="Images/ChessFight/image4.png" width="740" height="412" alt="">
+    		<h4>Bug causing both the chesspiece and its shadow to be completely offset.</h4>
+		</div>
+  	</div>
+	
+</body>
+</html>

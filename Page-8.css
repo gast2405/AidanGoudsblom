@@ -1,0 +1,12 @@
+@charset "utf-8";
+body {
+    background-image: url("Images/FRONT.png");
+    background-repeat: repeat;
+    background-color: black;
+	background-position: center;
+	width: 100%;
+	height: 101vh;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
