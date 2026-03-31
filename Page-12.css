@@ -35,7 +35,6 @@ p {
 .redborder {
 	
 	background-color: rgba(0,0,0,0.8);
-	width: 350px;
 	text-align: center;
 	border: medium double red;
 
@@ -48,7 +47,6 @@ p {
 
 .smallborder {
 	background-color: rgba(0,0,0,0.8);
-	width: 300px;
 	display: inline-block;
 	text-align: center;
 	border: medium double red;
