@@ -124,6 +124,10 @@ body {
 	content: url("Images/Misc/Doors_Special_2_converted.webp");
 }
 
+#crt:hover {
+	content: url("Images/Misc/crt_2.webp");
+}
+
 
 @media only screen and (max-width: 1550px) {
 	.Title-name {
