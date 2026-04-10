@@ -116,6 +116,10 @@ body {
 	content: url("Images/Misc/Door5_hover.webp");
 }
 
+#door5:hover {
+	content: url("Images/LOVE_SHINE/LOVE_Doors.webp");
+}
+
 #door9:hover {
 	content: url("Images/Misc/Doors_Special_1_converted.webp");
 }
@@ -128,6 +132,21 @@ body {
 	content: url("Images/Misc/crt_2.webp");
 }
 
+
+@media only screen and (max-width: 1919px) {
+	.Title-name {
+		width:80%;
+	}
+	
+	.door {
+		width: 300px;
+		height: 243px;
+	}
+
+	body {
+		overflow: scroll;
+	}
+}
 
 @media only screen and (max-width: 1550px) {
 	.Title-name {
