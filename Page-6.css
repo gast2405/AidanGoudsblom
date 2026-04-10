@@ -186,14 +186,15 @@ h4 {
 
 body {
   margin: 0;
+  
   font-family: Arial, sans-serif;
   color: white;
 }
 
-/* OUTER WRAPPER (creates empty space on sides) */
 .page {
-  max-width: 900px;   /* classic old-site width */
-  margin: 0 auto;     /* centers it horizontally */
+  max-width: 900px;   
+  margin: 0 auto;   
+  
 }
 
 /* INNER LAYOUT */
@@ -201,16 +202,19 @@ body {
   display: grid;
   grid-template-columns: 180px 1fr 180px;
   min-height: 100vh;
+  
 }
 
 .sidebar {
   
   padding: 15px;
+  margin-top: 75px;
 }
 
 .content {
   
   padding: 20px;
+  margin-top: 75px;	
 }
 
 a {
