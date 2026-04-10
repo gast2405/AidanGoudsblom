@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-image: url("Images/Shower_Cat/cat_window.webp");
+    background-image: url("Images/LOVE_SHINE/LOVESHINEBodyGrooverz2006Mix-ezgif.com-optimize\ \(5\).gif");
     background-repeat: repeat;
     background-color: black;
 	background-position: center;
@@ -182,4 +182,44 @@ h4 {
 #bottom {
 	padding-bottom: 1px;
 	padding-top: 11px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* OUTER WRAPPER (creates empty space on sides) */
+.page {
+  max-width: 900px;   /* classic old-site width */
+  margin: 0 auto;     /* centers it horizontally */
+}
+
+/* INNER LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  
+  padding: 15px;
+}
+
+.content {
+  
+  padding: 20px;
+}
+
+a {
+  display: block;
+  color: lightblue;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
