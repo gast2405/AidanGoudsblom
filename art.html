@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Creativity generator</title>
+<link href="Page-12.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<a href="index.html"><div class="backbutton">
+	  <h3 class="cooltext">Return to homepage</h3>
+	</div></a>
+	
+	<!-- <div class="redborder">
+	<h1 class="cooltext">Please check out my art</h1>
+	</div> -->
+
+	<div class="redborder">
+
+
+
+	<div class="win95-card">
+  <div class="card-titlebar">
+    <span class="card-title-text">Real intelligence visual art</span>
+    <div class="card-controls">
+      <button class="card-btn card-btn-min"></button>
+      <button class="card-btn card-btn-max"></button>
+      <button class="card-btn card-btn-close"></button>
+    </div>
+  </div>
+  <div class="card-menubar">
+    <span class="menu-item" id="randomize">Randomize</span>
+  </div>
+  <div class="image-container">
+	<img id="random_image" class="menu-image" src="" alt="">
+  </div>
+  
+</div>
+
+
+
+
+		<!-- <button class="button">Check out my art</button> -->
+	</div>
+
+
+<script>
+  const images = [
+    "Images/Drawings/1_converted.webp",
+"Images/Drawings/2_converted.webp",
+"Images/Drawings/3_converted.webp",
+"Images/Drawings/4_converted.webp",
+"Images/Drawings/5_converted.webp",
+"Images/Drawings/6_converted.webp",
+"Images/Drawings/8_converted.webp",
+"Images/Drawings/9_converted.webp",
+"Images/Drawings/10_converted.webp",
+"Images/Drawings/12_converted.webp",
+"Images/Drawings/13_converted.webp",
+"Images/Drawings/14_converted.webp",
+"Images/Drawings/15_converted.webp",
+"Images/Drawings/16_converted.webp",
+"Images/Drawings/17_converted.webp",
+"Images/Drawings/18_converted.webp",
+"Images/Drawings/19_converted.webp",
+"Images/Drawings/20_converted.webp",
+"Images/Drawings/21_converted.webp",
+"Images/Drawings/22_converted.webp",
+"Images/Drawings/23_converted.webp",
+"Images/Drawings/24_converted.webp",
+"Images/Drawings/25_converted.webp",
+"Images/Drawings/26_converted.webp",
+"Images/Drawings/27_converted.webp",
+"Images/Drawings/28_converted.webp",
+"Images/Drawings/29_converted.webp",
+"Images/Drawings/30_converted.webp",
+"Images/Drawings/31_converted.webp",
+"Images/Drawings/32_converted.webp",
+"Images/Drawings/33_converted.webp",
+"Images/Drawings/34_converted.webp",
+"Images/Drawings/35_converted.webp",
+"Images/Drawings/36_converted.webp",
+"Images/Drawings/37_converted.webp",
+"Images/Drawings/38_converted.webp",
+"Images/Drawings/39_converted.webp",
+"Images/Drawings/40_converted.webp",
+"Images/Drawings/41_converted.webp",
+"Images/Drawings/42_converted.webp",
+"Images/Drawings/43_converted.webp",
+"Images/Drawings/44_converted.webp",
+"Images/Drawings/45_converted.webp",
+"Images/Drawings/46_converted.webp",
+"Images/Drawings/47_converted.webp",
+"Images/Drawings/48_converted.webp",
+"Images/Drawings/49_converted.webp",
+"Images/Drawings/50_converted.webp",
+"Images/Drawings/51_converted.webp",
+"Images/Drawings/52_converted.webp",
+"Images/Drawings/53_converted.webp",
+"Images/Drawings/54_converted.webp",
+"Images/Drawings/55_converted.webp",
+"Images/Drawings/56_converted.webp",
+"Images/Drawings/57_converted.webp",
+"Images/Drawings/58_converted.webp",
+"Images/Drawings/59_converted.webp",
+"Images/Drawings/60_converted.webp",
+"Images/Drawings/61_converted.webp",
+"Images/Drawings/62_converted.webp",
+"Images/Drawings/65_converted.webp",
+"Images/Drawings/66_converted.webp",
+"Images/Drawings/67_converted.webp",
+"Images/Drawings/68_converted.webp",
+"Images/Drawings/69_converted.webp",
+"Images/Drawings/70_converted.webp",
+"Images/Drawings/71_converted.webp",
+"Images/Drawings/72_converted.webp",
+"Images/Drawings/73_converted.webp",
+"Images/Drawings/74_converted.webp",
+"Images/Drawings/75_converted.webp",
+"Images/Drawings/76_converted.webp",
+"Images/Drawings/77_converted.webp",
+"Images/Drawings/79_converted.webp",
+"Images/Drawings/80_converted.webp",
+"Images/Drawings/81_converted.webp",
+"Images/Drawings/82_converted.webp",
+"Images/Drawings/83_converted.webp",
+"Images/Drawings/84_converted.webp",
+"Images/Drawings/85_converted.webp",
+"Images/Drawings/86_converted.webp",
+"Images/Drawings/87_converted.webp",
+"Images/Drawings/88_converted.webp",
+"Images/Drawings/89_converted.webp",
+"Images/Drawings/90_converted.webp",
+"Images/Drawings/91_converted.webp",
+"Images/Drawings/92_converted.webp",
+"Images/Drawings/93_converted.webp",
+"Images/Drawings/94_converted.webp",
+"Images/Drawings/95_converted.webp",
+"Images/Drawings/96_converted.webp",
+"Images/Drawings/97_converted.webp",
+"Images/Drawings/98_converted.webp",
+"Images/Drawings/99_converted.webp",
+"Images/Drawings/100_converted.webp",
+"Images/Drawings/101_converted.webp",
+"Images/Drawings/102_converted.webp",
+"Images/Drawings/103_converted.webp",
+"Images/Drawings/104_converted.webp",
+"Images/Drawings/105_converted.webp",
+"Images/Drawings/106_converted.webp",
+"Images/Drawings/107_converted.webp",
+"Images/Drawings/108_converted.webp",
+"Images/Drawings/109_converted.webp",
+"Images/Drawings/111_converted.webp",
+"Images/Drawings/112_converted.webp",
+"Images/Drawings/113_converted.webp",
+"Images/Drawings/114_converted.webp",
+"Images/Drawings/115_converted.webp",
+"Images/Drawings/116_converted.webp",
+"Images/Drawings/117_converted.webp",
+"Images/Drawings/118_converted.webp",
+"Images/Drawings/119_converted.webp",
+"Images/Drawings/120_converted.webp",
+"Images/Drawings/121_converted.webp",
+"Images/Drawings/122_converted.webp",
+"Images/Drawings/123_converted.webp",
+"Images/Drawings/124_converted.webp",
+"Images/Drawings/125_converted.webp",
+"Images/Drawings/126_converted.webp",
+"Images/Drawings/127_converted.webp",
+"Images/Drawings/128_converted.webp",
+"Images/Drawings/129_converted.webp",
+"Images/Drawings/130_converted.webp",
+"Images/Drawings/131_converted.webp",
+"Images/Drawings/132_converted.webp",
+"Images/Drawings/133_converted.webp",
+"Images/Drawings/134_converted.webp",
+"Images/Drawings/135_converted.webp",
+"Images/Drawings/136_converted.webp",
+"Images/Drawings/137_converted.webp",
+"Images/Drawings/138_converted.webp",
+"Images/Drawings/139_converted.webp",
+"Images/Drawings/140_converted.webp",
+"Images/Drawings/141_converted.webp",
+"Images/Drawings/142_converted.webp",
+"Images/Drawings/143_converted.webp",
+"Images/Drawings/144_converted.webp",
+"Images/Drawings/145_converted.webp",
+"Images/Drawings/146_converted.webp",
+"Images/Drawings/147_converted.webp",
+"Images/Drawings/148_converted.webp",
+"Images/Drawings/149_converted.webp",
+"Images/Drawings/150_converted.webp",
+"Images/Drawings/151_converted.webp",
+"Images/Drawings/152_converted.webp",
+"Images/Drawings/153_converted.webp",
+"Images/Drawings/154_converted.webp",
+"Images/Drawings/155_converted.webp",
+"Images/Drawings/156_converted.webp",
+"Images/Drawings/157_converted.webp",
+"Images/Drawings/158_converted.webp",
+"Images/Drawings/159_converted.webp",
+"Images/Drawings/160_converted.webp",
+"Images/Drawings/161_converted.webp",
+"Images/Drawings/162_converted.webp",
+"Images/Drawings/163_converted.webp",
+"Images/Drawings/164_converted.webp",
+"Images/Drawings/165_converted.webp",
+"Images/Drawings/166_converted.webp",
+"Images/Drawings/167_converted.webp",
+"Images/Drawings/168_converted.webp",
+"Images/Drawings/169_converted.webp",
+"Images/Drawings/170_converted.webp",
+"Images/Drawings/171_converted.webp",
+"Images/Drawings/172_converted.webp",
+"Images/Drawings/173_converted.webp",
+"Images/Drawings/174_converted.webp",
+"Images/Drawings/175_converted.webp",
+"Images/Drawings/176_converted.webp",
+"Images/Drawings/177_converted.webp",
+"Images/Drawings/178_converted.webp",
+"Images/Drawings/179_converted.webp",
+"Images/Drawings/180_converted.webp",
+"Images/Drawings/181_converted.webp",
+"Images/Drawings/182_converted.webp",
+"Images/Drawings/183_converted.webp",
+"Images/Drawings/184_converted.webp",
+"Images/Drawings/185_converted.webp",
+"Images/Drawings/186_converted.webp",
+"Images/Drawings/187_converted.webp",
+"Images/Drawings/188_converted.webp",
+"Images/Drawings/189_converted.webp",
+"Images/Drawings/190_converted.webp",
+"Images/Drawings/191_converted.webp",
+"Images/Drawings/192_converted.webp",
+"Images/Drawings/193_converted.webp",
+"Images/Drawings/194_converted.webp",
+"Images/Drawings/195_converted.webp",
+"Images/Drawings/196_converted.webp",
+"Images/Drawings/197_converted.webp",
+"Images/Drawings/198_converted.webp",
+"Images/Drawings/199_converted.webp",
+"Images/Drawings/200_converted.webp",
+"Images/Drawings/201_converted.webp",
+"Images/Drawings/202_converted.webp",
+"Images/Drawings/203_converted.webp",
+"Images/Drawings/204_converted.webp",
+"Images/Drawings/205_converted.webp",
+"Images/Drawings/206_converted.webp",
+"Images/Drawings/207_converted.webp",
+"Images/Drawings/208_converted.webp",
+"Images/Drawings/209_converted.webp",
+"Images/Drawings/210_converted.webp",
+"Images/Drawings/211_converted.webp",
+"Images/Drawings/212_converted.webp",
+"Images/Drawings/213_converted.webp",
+"Images/Drawings/214_converted.webp",
+"Images/Drawings/215_converted.webp",
+"Images/Drawings/216_converted.webp",
+"Images/Drawings/217_converted.webp",
+"Images/Drawings/218_converted.webp",
+"Images/Drawings/219_converted.webp",
+"Images/Drawings/220_converted.webp",
+"Images/Drawings/221_converted.webp",
+"Images/Drawings/222_converted.webp",
+"Images/Drawings/223_converted.webp",
+"Images/Drawings/224_converted.webp",
+"Images/Drawings/225_converted.webp",
+"Images/Drawings/227_converted.webp",
+"Images/Drawings/228_converted.webp",
+"Images/Drawings/229_converted.webp",
+"Images/Drawings/230_converted.webp",
+"Images/Drawings/231_converted.webp",
+"Images/Drawings/232_converted.webp",
+"Images/Drawings/233_converted.webp",
+"Images/Drawings/234_converted.webp",
+"Images/Drawings/235_converted.webp",
+"Images/Drawings/236_converted.webp",
+"Images/Drawings/237_converted.webp",
+"Images/Drawings/238_converted.webp",
+"Images/Drawings/239_converted.webp",
+"Images/Drawings/240_converted.webp",
+"Images/Drawings/241_converted.webp",
+"Images/Drawings/242_converted.webp",
+"Images/Drawings/243_converted.webp",
+"Images/Drawings/244_converted.webp",
+"Images/Drawings/245_converted.webp",
+"Images/Drawings/246_converted.webp",
+"Images/Drawings/247_converted.webp",
+"Images/Drawings/248_converted.webp",
+"Images/Drawings/249_converted.webp",
+"Images/Drawings/250_converted.webp"
+  ];
+
+  const imgElement = document.getElementById("random_image");
+  const button = document.getElementById("randomize");
+
+  button.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    imgElement.src = images[randomIndex];
+  });
+</script>
+</body>
+</html>
